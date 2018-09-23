@@ -67,4 +67,3 @@ public class SystemSettingListPreference extends ListPreference {
     }
 
 }
-

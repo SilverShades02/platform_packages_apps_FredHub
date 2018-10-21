@@ -22,4 +22,10 @@
     <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
     <color name="icon_tint_color">@color/material_deep_teal_500</color>
 
+    <!-- Google Colors -->
+    <color name="gred">#DB4437</color>
+    <color name="gblue">#4285F4</color>
+    <color name="gyellow">#F4B400</color>
+    <color name="ggreen">#0F9D58</color>
+
 </resources>

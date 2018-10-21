@@ -20,6 +20,11 @@
      android:title="@string/fredhub"
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <Preference 
+       android:fragment="com.fred.fredhub.fragments.gestures.Gestures" 
+       android:icon="@drawable/ic_gestures"
+       android:title="@string/gestures_category" />
+
    <Preference
        android:fragment="com.fred.fredhub.fragments.system.System"
        android:icon="@drawable/ic_system"

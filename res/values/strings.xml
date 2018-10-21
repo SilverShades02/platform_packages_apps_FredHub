@@ -21,8 +21,8 @@
     <string name="fredhub_summary">Stay Peace, Join Fred!</string>
 
     <!-- Categories -->
+    <string name="gestures_category">Gestures</string>
     <string name="system_category">System</string>
-
     <string name="system_global_actions_category">Global actions</string>
 
     <!-- Global Actions -->

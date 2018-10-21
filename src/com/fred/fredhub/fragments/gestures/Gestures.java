@@ -14,37 +14,23 @@
  * limitations under the License.
  */
 
-package com.fred.fredhub.fragments.system;
+package com.fred.fredhub.fragments.gestures;
 
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.fred.fredhub.preferences.CustomSettingsPreferenceFragment;
 
-public class System extends CustomSettingsPreferenceFragment {
-    private static final String TAG = "System";
-    private static final String ADVANCED_REBOOT = "advanced_reboot";
-    private static final String SMART_PIXELS = "smart_pixels";
+public class Gestures extends CustomSettingsPreferenceFragment {
+    private static final String TAG = "Gestures";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.system);
-        addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
-        updateSmartPixelsPreference();
-     }
+        addPreferencesFromResource(R.xml.fred_gestures);
 
-     private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
-         if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
-        }
     }
 
     @Override
@@ -61,4 +47,5 @@ public class System extends CustomSettingsPreferenceFragment {
     public void onPause() {
         super.onPause();
     }
+
 }

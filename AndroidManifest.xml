@@ -23,6 +23,18 @@
 
     <application>
 
+        <!-- Gestures -->
+        <activity android:name="Settings$GesturesSettingsActivity"
+                android:label="@string/gestures_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.fred.fredhub.fragments.gestures.Gestures" />
+        </activity>
+
         <!-- System -->
         <activity android:name="Settings$SystemSettingsActivity"
                 android:label="@string/system_category"

@@ -25,6 +25,11 @@
        android:icon="@drawable/ic_gestures"
        android:title="@string/gestures_category" />
 
+  <Preference 
+       android:fragment="com.fred.fredhub.fragments.statusbar.Statusbar" 
+       android:icon="@drawable/ic_statusbar"
+       android:title="@string/statusbar_category" />
+
    <Preference
        android:fragment="com.fred.fredhub.fragments.system.System"
        android:icon="@drawable/ic_system"

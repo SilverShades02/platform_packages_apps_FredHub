@@ -22,6 +22,7 @@
 
     <!-- Categories -->
     <string name="gestures_category">Gestures</string>
+    <string name="statusbar_category">Statusbar</string>
     <string name="system_category">System</string>
     <string name="system_global_actions_category">Global actions</string>
 
